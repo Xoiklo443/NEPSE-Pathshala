@@ -19,4 +19,3 @@ Netlify, Vercel, etc.).
 - Progress tracking and theme preference are held in memory for the session
   (no `localStorage`/cookies are used) — swap in `localStorage` if you need
   it to persist across visits.
-- Built for **RB Solutions**.
