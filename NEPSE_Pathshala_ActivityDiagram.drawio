@@ -1,0 +1,193 @@
+<mxfile host="app.diagrams.net" modified="2026-07-30T00:00:00.000Z" agent="Claude" version="24.0.0" type="device">
+  <diagram name="Page-1" id="checkoutActivityPage1">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1250" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ==================== PARTITION CONTAINERS ==================== -->
+
+        <mxCell id="sysBox" value="Platform System" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;dashed=1;dashPattern=4 3;verticalAlign=top;align=center;fontSize=16;fontStyle=1;strokeColor=#666666;fillColor=#E3DBA6;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="360" y="100" width="360" height="700" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uiBox" value="Learner Interaction" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;dashed=1;dashPattern=4 3;verticalAlign=top;align=center;fontSize=16;fontStyle=1;strokeColor=#666666;fillColor=#A9C6AB;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="800" y="60" width="380" height="600" as="geometry" />
+        </mxCell>
+
+        <mxCell id="pgBox" value="Progress Tracker" style="rounded=1;arcSize=4;whiteSpace=wrap;html=1;dashed=1;dashPattern=4 3;verticalAlign=top;align=center;fontSize=16;fontStyle=1;strokeColor=#666666;fillColor=#AFC9DC;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="20" y="560" width="280" height="380" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== USER INTERACTION NODES ==================== -->
+
+        <mxCell id="init1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="90" width="20" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="reviewCart" value="Browse chapter list" style="rounded=1;absoluteArcSize=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFF9CC;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="985" y="140" width="130" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="initiateCheckout" value="Select lesson to start" style="rounded=1;absoluteArcSize=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFF9CC;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="825" y="155" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="provideShipping" value="Read lesson content" style="rounded=1;absoluteArcSize=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFF9CC;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="825" y="310" width="130" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="shippingDetailObj" value="lessonProgress: LessonProgress" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="315" width="170" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="providePayment" value="Attempt quiz" style="rounded=1;absoluteArcSize=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFF9CC;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="390" width="130" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="paymentDetailObj" value="quizAnswers: QuizSubmission" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="820" y="395" width="180" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== SYSTEM NODES ==================== -->
+
+        <mxCell id="checkInventory" value="Check lesson prerequisites" style="rounded=1;absoluteArcSize=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFF9CC;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="480" y="150" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="isAvailable" value="Are prerequisites met" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="480" y="230" width="120" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="flowFinal1" value="&#10005;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="395" y="255" width="30" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fork1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;strokeColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="460" y="400" width="180" height="10" as="geometry" />
+        </mxCell>
+
+        <mxCell id="reserveInventory" value="Save lesson completion" style="rounded=1;absoluteArcSize=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFF9CC;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="490" y="440" width="140" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="join2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF0000;strokeColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="460" y="510" width="180" height="10" as="geometry" />
+        </mxCell>
+
+        <mxCell id="printInvoice" value="Generate completion certificate" style="rounded=1;absoluteArcSize=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFF9CC;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="480" y="560" width="140" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="invoiceObj" value="certificate: Certificate" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="475" y="620" width="150" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="finalizeOrder" value="Notify learner and unlock next lesson" style="rounded=1;absoluteArcSize=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFF9CC;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="475" y="680" width="150" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="actFinal" style="ellipse;shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="530" y="745" width="30" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== PAYMENT GATEWAY NODES ==================== -->
+
+        <mxCell id="processPayment" value="Evaluate quiz answers" style="rounded=1;absoluteArcSize=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFF9CC;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="100" y="610" width="130" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="isPaymentSuccess" value="Is quiz passed" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="100" y="680" width="130" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="flowFinal2" value="&#10005;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="800" width="30" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== EDGES ==================== -->
+
+        <mxCell id="e1" style="html=1;endArrow=block;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;fillColor=#000000;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="init1" target="reviewCart">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e2" style="html=1;endArrow=block;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;fillColor=#000000;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="reviewCart" target="initiateCheckout">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e3" style="html=1;endArrow=block;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;fillColor=#000000;exitX=0;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="initiateCheckout" target="checkInventory">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e4" style="html=1;endArrow=block;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;fillColor=#000000;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="checkInventory" target="isAvailable">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e5" value="No" style="html=1;endArrow=block;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;fillColor=#000000;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="isAvailable" target="flowFinal1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e6" value="Yes" style="html=1;endArrow=block;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;fillColor=#000000;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="isAvailable" target="provideShipping">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e7" style="html=1;endArrow=block;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;fillColor=#000000;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="provideShipping" target="shippingDetailObj">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e8" style="html=1;endArrow=block;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;fillColor=#000000;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="shippingDetailObj" target="providePayment">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e9" style="html=1;endArrow=block;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;fillColor=#000000;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="providePayment" target="paymentDetailObj">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e10" style="html=1;endArrow=block;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;fillColor=#000000;exitX=0.3;exitY=1;entryX=0.9;entryY=0;" edge="1" parent="1" source="paymentDetailObj" target="fork1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e11" style="html=1;endArrow=block;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;fillColor=#000000;exitX=0;exitY=0.5;entryX=1;entryY=0.3;" edge="1" parent="1" source="fork1" target="processPayment">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e12" style="html=1;endArrow=block;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;fillColor=#000000;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="fork1" target="reserveInventory">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e13" style="html=1;endArrow=block;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;fillColor=#000000;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="reserveInventory" target="join2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e14" style="html=1;endArrow=block;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;fillColor=#000000;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="processPayment" target="isPaymentSuccess">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e15" value="No" style="html=1;endArrow=block;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;fillColor=#000000;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="isPaymentSuccess" target="flowFinal2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e16" value="Yes" style="html=1;endArrow=block;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;fillColor=#000000;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="isPaymentSuccess" target="join2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e17" style="html=1;endArrow=block;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;fillColor=#000000;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="join2" target="printInvoice">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e18" style="html=1;endArrow=block;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;fillColor=#000000;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="printInvoice" target="invoiceObj">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e19" style="html=1;endArrow=block;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;fillColor=#000000;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="invoiceObj" target="finalizeOrder">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e20" style="html=1;endArrow=block;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#000000;fillColor=#000000;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="finalizeOrder" target="actFinal">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

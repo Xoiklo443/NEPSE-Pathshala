@@ -1,0 +1,126 @@
+<mxfile host="app.diagrams.net" modified="2026-08-14T00:00:00.000Z" agent="Claude" version="24.0.0" type="device">
+  <diagram name="Class Diagram" id="nepse-class-diagram">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Learner class -->
+        <mxCell id="learner_header" value="Learner" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6FA;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="learner_attrs" value="+ learnerId: String&#10;+ name: String&#10;+ preferredLanguage: String&#10;+ progressCount: int" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="40" y="70" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="learner_methods" value="+ completeLesson()&#10;+ viewProgress()" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="40" y="140" width="220" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- LessonProgress class -->
+        <mxCell id="progress_header" value="LessonProgress" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6FA;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="360" y="40" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="progress_attrs" value="+ progressId: String&#10;+ startedAt: DateTime&#10;+ completedAt: DateTime&#10;+ status: String" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="360" y="70" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="progress_methods" value="+ markComplete()&#10;+ resetProgress()&#10;+ checkEligibility()" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="360" y="140" width="220" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Instructor class -->
+        <mxCell id="instructor_header" value="Instructor" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6FA;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="680" y="40" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="instructor_attrs" value="+ instructorId: String&#10;+ name: String&#10;+ expertiseArea: String" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="680" y="70" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="instructor_methods" value="+ publishChapter()&#10;+ updateContent()" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="680" y="130" width="220" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Certificate class -->
+        <mxCell id="certificate_header" value="Certificate" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6FA;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="320" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="certificate_attrs" value="+ certificateId: String&#10;+ issuedDate: DateTime&#10;+ score: Decimal" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="40" y="350" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="certificate_methods" value="+ generateCertificate()" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="40" y="410" width="220" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- QuizQuestion class -->
+        <mxCell id="quiz_header" value="QuizQuestion" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6FA;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="360" y="320" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="quiz_attrs" value="+ questionId: String&#10;+ questionText: String&#10;+ correctOption: int&#10;+ explanation: String" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="360" y="350" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="quiz_methods" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="360" y="420" width="220" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Chapter class -->
+        <mxCell id="chapter_header" value="Chapter" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6FA;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="680" y="320" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="chapter_attrs" value="+ chapterId: String&#10;+ title: String&#10;+ lessonCount: int&#10;+ orderIndex: int" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="680" y="350" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="chapter_methods" value="+ checkPublishStatus()&#10;+ reorderLessons()" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=4;" vertex="1" parent="1">
+          <mxGeometry x="680" y="420" width="220" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Associations -->
+
+        <mxCell id="rel1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="learner_header" target="progress_header">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel1_lbl1" value="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="270" y="55" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rel1_lbl2" value="many" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="310" y="80" width="40" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="progress_header" target="instructor_header">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel2_lbl1" value="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="600" y="55" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rel2_lbl2" value="many" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="630" y="80" width="40" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="progress_methods" target="quiz_header">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel3_lbl1" value="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="460" y="210" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rel3_lbl2" value="many" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="460" y="290" width="40" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="instructor_methods" target="chapter_header">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel4_lbl1" value="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="780" y="200" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rel4_lbl2" value="many" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="780" y="290" width="40" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rel5" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="certificate_header" target="progress_attrs">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel5_lbl1" value="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="270" y="325" width="20" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
